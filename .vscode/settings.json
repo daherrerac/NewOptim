@@ -1,0 +1,9 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "staticWebApps.appSubpath": "opt-dasboard",
+    "staticWebApps.apiSubpath": "opt-dasboard",
+    "staticWebApps.appArtifactSubpath": "dist"
+}
