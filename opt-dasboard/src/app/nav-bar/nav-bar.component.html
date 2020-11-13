@@ -1,0 +1,41 @@
+
+<nav class="navbar navbar-expand-lg dark-bar">
+    <a class="navbar-brand" href="#">
+        <img src="assets/img/pump.png"  class="d-inline-block align-top" alt="">        
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown" *ngIf="auth.loggedIn" >
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Módulos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" routerLink="/historico/pozo" routerLinkActive="active">Histórico Pozo</a>
+              <a class="dropdown-item" routerLink="/historico/campo" routerLinkActive="active">Histórico Campo</a>              
+              <a class="dropdown-item" routerLink="/prediccion" routerLinkActive="active">Predicción</a>
+            </div>
+        </li>
+        <li class="nav-item" *ngIf="auth.loggedIn" >
+          <a class="nav-link" href="#">Carga de datos</a>
+        </li>                 
+      </ul>      
+    </div>
+    <span class="navbar-text">
+      <button  *ngIf="!auth.loggedIn" 
+        (click)="auth.login()"
+        class="btn btn-sm btn-outline-primary">
+        Ingresar
+      </button>
+      <button *ngIf="auth.loggedIn"
+        (click)="auth.logout()"
+        class="btn btn-sm btn-outline-danger">
+        Salir
+      </button>
+    </span>
+</nav>

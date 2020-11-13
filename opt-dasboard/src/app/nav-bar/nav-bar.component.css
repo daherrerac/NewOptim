@@ -1,0 +1,21 @@
+.dark-bar{
+    background: #222b45;
+    color: #ffffff;
+}
+.dark-bar img{
+    background: #ffffff;
+    border-radius: 50%;
+}
+.dark-bar a{
+    color: #ffffff;
+}
+.dropdown-menu{
+    background: #222b45;
+}
+
+.dropdown-item:focus, .dropdown-item:hover{
+    background: #4964b4;
+}
+.navbar-text button{
+    margin: 0 10px;
+}
