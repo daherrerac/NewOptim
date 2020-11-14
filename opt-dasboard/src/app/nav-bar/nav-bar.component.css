@@ -19,3 +19,7 @@
 .navbar-text button{
     margin: 0 10px;
 }
+.navbar-toggler-icon img{
+    background: transparent;
+    max-width: 40px;
+}

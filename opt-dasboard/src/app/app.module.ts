@@ -10,6 +10,15 @@ import { PredictionViewComponent } from './prediction-view/prediction-view.compo
 import { FieldViewComponent } from './field-view/field-view.component';
 import { CallbackComponent } from './components/callback/callback.component';
 
+import { SwiperModule } from 'ngx-swiper-wrapper';
+import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
+import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+
+
+const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
+  direction: 'horizontal',
+  slidesPerView: 'auto'
+};
 
 @NgModule({
   declarations: [
@@ -23,9 +32,13 @@ import { CallbackComponent } from './components/callback/callback.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
-  providers: [],
+  providers: [
+      provide: SWIPER_CONFIG,
+      useValue: DEFAULT_SWIPER_CONFIG
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
