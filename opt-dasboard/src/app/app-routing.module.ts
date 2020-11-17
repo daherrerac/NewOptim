@@ -5,6 +5,7 @@ import { FieldViewComponent } from './field-view/field-view.component';
 import { PredictionViewComponent } from './prediction-view/prediction-view.component';
 import { CallbackComponent } from './components/callback/callback.component';
 import { AuthGuard } from './services/auth.guard';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: 'historico/pozo', component: WellViewComponent, canActivate: [AuthGuard]},
