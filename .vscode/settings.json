@@ -5,5 +5,7 @@
     ],
     "staticWebApps.appSubpath": "opt-dasboard",
     "staticWebApps.apiSubpath": "opt-dasboard",
-    "staticWebApps.appArtifactSubpath": "dist"
+    "staticWebApps.appArtifactSubpath": "dist",
+    "appService.defaultWebAppToDeploy": "/subscriptions/9d693e92-224b-4655-89d2-32451cc1cdc0/resourceGroups/optimpower/providers/Microsoft.Web/sites/dashboardoptim",
+    "appService.deploySubpath": "opt-dasboard\\dist\\opt-dasboard"
 }

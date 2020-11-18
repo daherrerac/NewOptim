@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'historico/campo', component: FieldViewComponent, canActivate: [AuthGuard]},
   { path: 'prediccion', component: PredictionViewComponent, canActivate: [AuthGuard]},
   { path: 'callback', component: CallbackComponent},
+  { path: '', component: HomeComponent},
   { path: '**', pathMatch: 'full', redirectTo: '/'}
 ];
 
