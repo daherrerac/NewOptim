@@ -11,6 +11,7 @@ import { FieldViewComponent } from './field-view/field-view.component';
 import { CallbackComponent } from './components/callback/callback.component';
 
 import { HomeComponent } from './home/home.component';
+import { FormFieldComponent } from './form-field/form-field.component';
 
 
 
@@ -24,7 +25,8 @@ import { HomeComponent } from './home/home.component';
     PredictionViewComponent,
     FieldViewComponent,
     CallbackComponent,
-    HomeComponent
+    HomeComponent,
+    FormFieldComponent
   ],
   imports: [
     BrowserModule,

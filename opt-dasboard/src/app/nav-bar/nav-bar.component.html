@@ -23,6 +23,9 @@
               <a class="dropdown-item" routerLink="/prediccion" routerLinkActive="active">Predicción</a>
             </div>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/adicionar" *ngIf="auth.loggedIn" >Añadir Campo</a>
+        </li>
         <li class="nav-item" *ngIf="auth.loggedIn" >
           <a class="nav-link" href="https://optimpower.azurewebsites.net/pages/dashboard">Carga de datos</a>
         </li>                 
