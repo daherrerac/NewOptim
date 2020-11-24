@@ -1,15 +1,21 @@
 section.campo{
-    height: calc(100vh - 155px);
+    height:auto;
     background: #2c3758;
+    padding: 25px 0;
 }
 form{
-    width: 80%;
+    width: 60%;
     margin: 0px auto;
-    padding: 50px 0;
+    padding: 25px 0;
     color: #ffffff;
 }
 .btn-form{
     background: transparent;
     color: #ffffff;
     border:1px solid #ffffff;
+}
+@media(max-width:768px){
+    form{
+        width: 90%;
+    }
 }

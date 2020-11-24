@@ -7,12 +7,14 @@ import { CallbackComponent } from './components/callback/callback.component';
 import { AuthGuard } from './services/auth.guard';
 import { HomeComponent } from './home/home.component';
 import { FormFieldComponent } from './form-field/form-field.component';
+import { UploadFilesComponent } from './components/upload-files/upload-files.component';
 
 const routes: Routes = [
   { path: 'historico/pozo', component: WellViewComponent, canActivate: [AuthGuard]},
   { path: 'historico/campo', component: FieldViewComponent, canActivate: [AuthGuard]},
   { path: 'prediccion', component: PredictionViewComponent, canActivate: [AuthGuard]},
   { path: 'adicionar', component: FormFieldComponent, canActivate: [AuthGuard]},
+  { path: 'carga', component: UploadFilesComponent, canActivate: [AuthGuard]},
   { path: 'callback', component: CallbackComponent},
   { path: '', component: HomeComponent},
   { path: '**', pathMatch: 'full', redirectTo: '/'}

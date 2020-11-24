@@ -12,6 +12,7 @@ import { CallbackComponent } from './components/callback/callback.component';
 
 import { HomeComponent } from './home/home.component';
 import { FormFieldComponent } from './form-field/form-field.component';
+import { UploadFilesComponent } from './components/upload-files/upload-files.component';
 
 
 
@@ -26,7 +27,8 @@ import { FormFieldComponent } from './form-field/form-field.component';
     FieldViewComponent,
     CallbackComponent,
     HomeComponent,
-    FormFieldComponent
+    FormFieldComponent,
+    UploadFilesComponent
   ],
   imports: [
     BrowserModule,
