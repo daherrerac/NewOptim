@@ -9,12 +9,14 @@ import { HomeComponent } from './home/home.component';
 import { FormFieldComponent } from './form-field/form-field.component';
 import { UploadFilesComponent } from './components/upload-files/upload-files.component';
 
+// { path: 'carga', component: UploadFilesComponent, canActivate: [AuthGuard]},
+
 const routes: Routes = [
-  { path: 'historico/pozo', component: WellViewComponent, canActivate: [AuthGuard]},
-  { path: 'historico/campo', component: FieldViewComponent, canActivate: [AuthGuard]},
-  { path: 'prediccion', component: PredictionViewComponent, canActivate: [AuthGuard]},
-  { path: 'adicionar', component: FormFieldComponent, canActivate: [AuthGuard]},
-  { path: 'carga', component: UploadFilesComponent, canActivate: [AuthGuard]},
+  { path: 'historico/pozo', component: WellViewComponent},
+  { path: 'historico/campo', component: FieldViewComponent},
+  { path: 'prediccion', component: PredictionViewComponent},
+  { path: 'adicionar', component: FormFieldComponent},
+  { path: 'carga', component: UploadFilesComponent},
   { path: 'callback', component: CallbackComponent},
   { path: '', component: HomeComponent},
   { path: '**', pathMatch: 'full', redirectTo: '/'}

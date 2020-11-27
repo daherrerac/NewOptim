@@ -11,11 +11,12 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
   // Create an observable of Auth0 instance of client
+  // https://dashboardoptim.azurewebsites.net/ ${window.location.origin}
   auth0Client$ = (from(
     createAuth0Client({
       domain: 'dev-42upulbm.us.auth0.com',
       client_id: 'yPq0pCrTsXWGN5UK7GK1dCFCz5QUCIy3',
-      redirect_uri: `${window.location.origin}/callback`
+      redirect_uri: `https://dashboardoptim.azurewebsites.net/callback`
     })
   ) as Observable<Auth0Client>).pipe(
     shareReplay(1), // Every subscription receives the same shared value
@@ -70,14 +71,14 @@ export class AuthService {
     });
   }
 
-  login(redirectPath: string = '/') {
+  login(redirectPath: string = ' ') {
     // A desired redirect path can be passed to login method
     // (e.g., from a route guard)
     // Ensure Auth0 client instance exists
     this.auth0Client$.subscribe((client: Auth0Client) => {
       // Call method to log in
       client.loginWithRedirect({
-        redirect_uri: `${window.location.origin}/callback`,
+        redirect_uri: `https://dashboardoptim.azurewebsites.net/callback`,
         appState: { target: redirectPath }
       });
     });
@@ -114,8 +115,8 @@ export class AuthService {
     this.auth0Client$.subscribe((client: Auth0Client) => {
       // Call method to log out
       client.logout({
-        client_id: "JaeWH01OBrXsxHSFBY4wdAz6Rj9cthOZ",
-        returnTo: `${window.location.origin}`
+        client_id: 'yPq0pCrTsXWGN5UK7GK1dCFCz5QUCIy3',
+        returnTo: `https://dashboardoptim.azurewebsites.net`
       });
     });
   }
