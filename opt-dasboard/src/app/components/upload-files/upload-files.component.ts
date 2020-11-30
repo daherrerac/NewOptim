@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {BlobServiceClient, AnonymousCredential, newPipeline } from '@azure/storage-blob';
 import { environment } from '../../../environments/environment';
 import * as CryptoJS from 'crypto-js';
-
+import { FormGroup, FormControl } from '@angular/forms';
 
 
 
@@ -13,6 +13,7 @@ import * as CryptoJS from 'crypto-js';
   styleUrls: ['./upload-files.component.css']
 })
 export class UploadFilesComponent implements OnInit {
+  form: FormGroup;
   title = 'web1';
   currentFile: File = null;
   fileSize = 0;
@@ -20,6 +21,7 @@ export class UploadFilesComponent implements OnInit {
   fileName: string;
   i = 1;
   async onFileChange(event) {
+    this.fileSize = 0;
     this.currentFile = event.target.files[0];
     this.fileSize = event.target.files[0].size;
     if (this.fileSize !== 0){
@@ -91,8 +93,14 @@ export class UploadFilesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.form = new FormGroup({
+      files: new FormControl('')
+    });
   }
 
+  clearFile() {
+    this.form.get('files').reset();
+  }
 }
 
 

@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { FormFieldComponent } from './form-field/form-field.component';
 import { UploadFilesComponent } from './components/upload-files/upload-files.component';
 import {ProgressBarModule} from 'angular-progress-bar';
+import { UploadblobComponent } from './components/uploadblob/uploadblob.component';
 
 
 
@@ -28,7 +29,8 @@ import {ProgressBarModule} from 'angular-progress-bar';
     CallbackComponent,
     HomeComponent,
     FormFieldComponent,
-    UploadFilesComponent
+    UploadFilesComponent,
+    UploadblobComponent
   ],
   imports: [
     BrowserModule,

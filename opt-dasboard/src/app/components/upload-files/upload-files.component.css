@@ -17,13 +17,32 @@ form{
 .custom-file-input:lang(es) ~ .custom-file-label::after {
 	content: "Seleccionar";
 }
-.archivos{
+.titulo{
     color: #ffffff;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
     display: block;
     width: 100%;
+    margin: 1em 0;
+}
+.archivos{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+button{
+    margin: 1em 0;
+}
+ul{
+    list-style: none;
+}
+.separador{
+    height: 20px;
+    display: block;
 }
 @media(max-width:768px){
     form{

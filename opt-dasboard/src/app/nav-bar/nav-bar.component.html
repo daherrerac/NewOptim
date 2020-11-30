@@ -13,7 +13,8 @@
         <li class="nav-item active">
           <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item dropdown" *ngIf="auth.loggedIn" >
+         <!-- *ngIf="auth.loggedIn" -->
+       <li class="nav-item dropdown"  > 
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Módulos
             </a>
@@ -24,14 +25,14 @@
             </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/adicionar" *ngIf="auth.loggedIn" >Añadir Campo</a>
+          <a class="nav-link" routerLink="/adicionar"  >Añadir Campo</a>
         </li>
-        <li class="nav-item" *ngIf="auth.loggedIn" >
+        <li class="nav-item"  >
           <a class="nav-link" href="/carga">Carga de datos</a>
         </li>                 
       </ul>      
     </div>
-    <span class="navbar-text">
+    <span class="navbar-text" style="display: none;">
       <button  *ngIf="!auth.loggedIn" 
         (click)="auth.login()"
         class="btn btn-sm btn-outline-primary">

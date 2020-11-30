@@ -1,14 +1,30 @@
 <section class="campo">
     <div class="container-fluid">
-        <form class="my-auto">
-            <p>Seleccione el archivo a subir</p>
-            <div class="custom-file">
-                <input type="file" class="custom-file-input" id="file" (change)="onFileChange($event)" required>
-                <label class="custom-file-label" for="validatedCustomFile">{{fileName}}</label>                
-            </div>
-            <p>{{fileName}}</p>
-            <progress-bar [progress]="fileSize" [color]="'#488aff'">
-            </progress-bar>          
+        <form class="my-auto">            
+            <form formGroup="form">  
+                <div class="titulo">
+                    Seleccione el archivo a subir
+                </div>                
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="file" (change)="onFileChange($event)" required>
+                    <label class="custom-file-label" for="validatedCustomFile" formControlName="files">{{fileName}}</label>   
+                    <button class="btn btn-sm btn-primary" (click)="clearFile()">Limpiar</button>             
+                </div>
+            
+                <div class="separador"></div>
+                
+                <span>Carga al storage</span>
+                <progress-bar [progress]="fileSize" [color]="'#488aff'"></progress-bar>  
+
+                
+
+                <ul>
+                    <li>{{fileName}}</li>
+                </ul>
+            
+                
+
+            </form>
         </form>  
         <div class="archivos">
             Archivos en el contenedor:
