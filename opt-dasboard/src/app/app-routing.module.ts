@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { FormFieldComponent } from './form-field/form-field.component';
 import { UploadFilesComponent } from './components/upload-files/upload-files.component';
 import { UploadblobComponent } from './components/uploadblob/uploadblob.component';
+import { PozoComponent } from './components/pozo/pozo.component';
 
 // { path: 'carga', component: UploadFilesComponent, canActivate: [AuthGuard]},
 
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'historico/pozo', component: WellViewComponent},
   { path: 'historico/campo', component: FieldViewComponent},
   { path: 'prediccion', component: PredictionViewComponent},
-  { path: 'adicionar', component: FormFieldComponent},
+ // { path: 'adicionar', component: FormFieldComponent},
+  { path: 'adicionar', component: PozoComponent},
  // { path: 'carga', component: UploadFilesComponent},
   { path: 'carga', component: UploadblobComponent},
   { path: 'callback', component: CallbackComponent},

@@ -16,6 +16,15 @@ import { FormFieldComponent } from './form-field/form-field.component';
 import { UploadFilesComponent } from './components/upload-files/upload-files.component';
 import {ProgressBarModule} from 'angular-progress-bar';
 import { UploadblobComponent } from './components/uploadblob/uploadblob.component';
+import { PozoComponent } from './components/pozo/pozo.component';
+import { CrearPozoComponent } from './components/pozo/crear-pozo/crear-pozo.component';
+import { ListarPozoComponent } from './components/pozo/listar-pozo/listar-pozo.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
+
 
 
 
@@ -31,13 +40,19 @@ import { UploadblobComponent } from './components/uploadblob/uploadblob.componen
     HomeComponent,
     FormFieldComponent,
     UploadFilesComponent,
-    UploadblobComponent
+    UploadblobComponent,
+    PozoComponent,
+    CrearPozoComponent,
+    ListarPozoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ProgressBarModule
+    ProgressBarModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [
    ],

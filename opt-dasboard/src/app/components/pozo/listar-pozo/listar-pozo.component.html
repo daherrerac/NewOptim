@@ -1,0 +1,14 @@
+<table class=" table table-sm">
+    <thead>
+        <tr>
+            <td>Empresa</td>
+            <td>Campo</td>
+            <td>Pozo</td>
+        </tr>
+    </thead>
+    <tr *ngFor="let pozo of pozoService.list">
+        <td>{{ pozo.company}}</td>
+        <td>{{ pozo.field}}</td>
+        <td>{{ pozo.well}}</td>
+    </tr>
+</table>
