@@ -6,7 +6,7 @@
             </div> 
             <div>                 
                 <button (click)="addFile()">Subir archivo</button>             
-                <input style="display: none;" type="file" id="fileUpload" #selectedFile ngModel="fileUpload" (click)="selectedFile.value = null" value="" (change)="handleFileInput($event.target.files)" />      
+                <input style="display: none;" type="file" id="fileUpload" #selectedFile  (click)="selectedFile.value = null" value="" (change)="handleFileInput($event.target.files)" />      
             </div>
             <div class="texto">Proceso de subida:</div>
             <progress-bar [progress]="fileSize" [color]="'#488aff'"></progress-bar>
