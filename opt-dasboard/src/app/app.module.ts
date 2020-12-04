@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PredictionViewComponent } from './prediction-view/prediction-view.component';
 import { FieldViewComponent } from './field-view/field-view.component';
 import { CallbackComponent } from './components/callback/callback.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import { HomeComponent } from './home/home.component';
 import { FormFieldComponent } from './form-field/form-field.component';
@@ -35,6 +36,7 @@ import { UploadblobComponent } from './components/uploadblob/uploadblob.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ProgressBarModule
   ],
   providers: [

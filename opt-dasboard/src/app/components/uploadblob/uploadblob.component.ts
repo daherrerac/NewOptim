@@ -16,7 +16,8 @@ export class UploadblobComponent implements OnInit {
   fileUpload: any;
   fileUpoadInitiated: boolean;
   fileDownloadInitiated: boolean;
-  private baseUrl = 'http://optimpowerback.azurewebsites.net/api/blobstorage';
+  fileSize = 0;
+  private baseUrl = 'https://optimpowerback.azurewebsites.net/api/blobstorage';
 
   ngOnInit(): void {
     this.showBlobs();
@@ -59,10 +60,12 @@ export class UploadblobComponent implements OnInit {
           console.log(response);
           if (response === true) {
             this.showBlobs();
+            this.fileSize = 100;
           }
           else {
             alert('Error occured!');
             this.fileUpoadInitiated = false;
+            this.fileSize = 0;
           }
         },
           err => console.log(err),
@@ -95,6 +98,7 @@ export class UploadblobComponent implements OnInit {
     this.http.get(this.baseUrl + '/deletefile/' + fileName).subscribe(result => {
       if (result != null) {
         this.showBlobs();
+        this.fileSize = 0;
       }
     }, error => console.error(error));
   }

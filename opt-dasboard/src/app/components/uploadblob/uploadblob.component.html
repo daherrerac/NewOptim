@@ -1,16 +1,29 @@
-<div class="row">
-    <div class="col-md-12">                
-        <h5>
-        Carga de Archivos
-        </h5>
-                
-        <div>  
-            <i class="fa fa-plus fa-2x" style="cursor: pointer; color: darkslateblue;" (click)="addFile()"></i>&nbsp; Subir Archivo
-            <input style="display: none;" type="file" id="fileUpload" #selectedFile ngModel="fileUpload" (click)="selectedFile.value = null" value="" (change)="handleFileInput($event.target.files)" />      
+<section class="campo">
+    <div class="container-fluid">
+        <div  class="form my-auto"> 
+            <div class="titulo">
+                Seleccione el archivo a subir
+            </div> 
+            <div>                 
+                <button (click)="addFile()">Subir archivo</button>             
+                <input style="display: none;" type="file" id="fileUpload" #selectedFile ngModel="fileUpload" (click)="selectedFile.value = null" value="" (change)="handleFileInput($event.target.files)" />      
+            </div>
+            <div class="texto">Proceso de subida:</div>
+            <progress-bar [progress]="fileSize" [color]="'#488aff'"></progress-bar>
         </div>
-        <br>
-                                
+        <div class="lista">
+            <ul *ngFor="let item of files">
+                <li>
+                    <span>{{item}}</span>
+                    <input type="image" src="assets/img/dw.png" (click)="downloadFile(item)">
+                    <input type="image" src="assets/img/dl.png" (click)="deleteFile(item)">                                        
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
+</section>
+
+
+
       
       

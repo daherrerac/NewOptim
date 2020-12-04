@@ -3,8 +3,7 @@
     color: #ffffff;
 }
 .dark-bar img{
-    background: #ffffff;
-    border-radius: 50%;
+    max-width: 60px;
 }
 .dark-bar a{
     color: #ffffff;

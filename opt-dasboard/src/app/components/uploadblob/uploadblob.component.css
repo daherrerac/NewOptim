@@ -1,0 +1,73 @@
+section.campo{
+    min-height: calc(100vh - 155px);
+    background: #2c3758;
+    padding: 25px 0;
+}
+.form{
+    width: 60%;
+    margin: 0px auto;
+    padding: 25px 0;
+    color: #ffffff;
+}
+.titulo{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+}
+ul{
+    list-style: none;
+    width: 60%;
+    margin: 0px auto;
+    padding: 5px 0;
+    color: #ffffff;
+}
+li{
+    display: inline-flex;
+    width: 100%;
+    margin: 0 auto;    
+    font-size: 1.2em;    
+    background: #222b45;
+    padding: 10px;    
+}
+li input{
+    max-width: 25px;
+    margin: 0 5px;
+}
+li span{
+    width: calc(100% - 70px);
+}
+button{
+    color: #ffffff;
+    background: url(/assets/img/up.png) no-repeat;        
+    background-position: 185px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 220px;
+    text-align: left;
+    background-size: 25px;
+    border: 1px solid #0373cd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px #222b45;
+}
+button img{
+    max-width: 25px;
+    margin-left: 20px;
+}
+.texto{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+}
+
+@media(max-width:768px){
+    ul{
+        width: 100%;
+    }
+}

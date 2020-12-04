@@ -8,6 +8,7 @@ import { AuthGuard } from './services/auth.guard';
 import { HomeComponent } from './home/home.component';
 import { FormFieldComponent } from './form-field/form-field.component';
 import { UploadFilesComponent } from './components/upload-files/upload-files.component';
+import { UploadblobComponent } from './components/uploadblob/uploadblob.component';
 
 // { path: 'carga', component: UploadFilesComponent, canActivate: [AuthGuard]},
 
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'historico/campo', component: FieldViewComponent},
   { path: 'prediccion', component: PredictionViewComponent},
   { path: 'adicionar', component: FormFieldComponent},
-  { path: 'carga', component: UploadFilesComponent},
+ // { path: 'carga', component: UploadFilesComponent},
+  { path: 'carga', component: UploadblobComponent},
   { path: 'callback', component: CallbackComponent},
   { path: '', component: HomeComponent},
   { path: '**', pathMatch: 'full', redirectTo: '/'}
