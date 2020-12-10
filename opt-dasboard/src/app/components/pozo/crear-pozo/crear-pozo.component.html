@@ -3,34 +3,79 @@
         <form [formGroup] = "form" (ngSubmit)="guardarPozo()">
           <div class="form-group">
             <label for="empresa">Empresa</label>
-            <input type="text" name="empresa" id="empresa" class="form-control" placeholder="Empresa" aria-describedby="helpId" formControlName="company">            
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fa fa-building" aria-hidden="true"></i>
+                </span>
+              </div>
+              <input type="text" name="empresa" id="empresa" class="form-control" placeholder="Empresa" aria-describedby="helpId" formControlName="company">
+            </div>                        
           </div>
 
           <div class="form-group">
             <label for="bloque">Bloque</label>
-            <input type="text" name="bloque" id="Bloque" class="form-control" placeholder="Bloque" aria-describedby="helpId">            
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fas fa-th" aria-hidden="true"></i>
+                </span>
+              </div>
+              <input type="text" name="bloque" id="Bloque" class="form-control" placeholder="Bloque" aria-describedby="helpId">
+            </div>                      
           </div>
           
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail4">Campo</label>
-              <input type="text" class="form-control" id="inputEmail4" placeholder="Campo" formControlName="field">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">
+                    <i class="fas fa-square"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Campo" formControlName="field">
+              </div>              
             </div>
+            
             <div class="form-group col-md-6">
               <label for="inputPassword4">Yacimiento</label>
-              <input type="text" class="form-control" id="inputPassword4" placeholder="Yacimiento">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">
+                    <i class="far fa-square"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" id="inputPassword4" placeholder="Yacimiento">
+              </div>              
             </div>
           </div>
+          
           <div class="form-group">
             <label for="inputAddress">Pozo</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="Nombre de pozo" formControlName="well">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fas fa-border-none"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Nombre de pozo" formControlName="well">
+            </div>            
           </div>
+          
           <div class="form-group">
             <label for="inputAddress2">Ubicación</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Ubicación">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fas fa-map-pin"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Ubicación">
+            </div>            
           </div>
                         
-          <button type="submit" class="btn btn-form">Añadir</button>
+          <button type="submit" class="btn btn-form"><i class="fas fa-plus"></i> Añadir </button>
           
         </form>
     </div>

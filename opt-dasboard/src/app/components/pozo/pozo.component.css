@@ -13,3 +13,8 @@ hr {
 	border: 0;
 	border-top: 1px solid #ffffff;
 }
+.listado{
+    max-height: 60vh;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}

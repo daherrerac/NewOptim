@@ -4,11 +4,15 @@
             <td>Empresa</td>
             <td>Campo</td>
             <td>Pozo</td>
+            <td>Modificar</td>
+            <td>Borrar</td>
         </tr>
     </thead>
     <tr *ngFor="let pozo of pozoService.list">
         <td>{{ pozo.company}}</td>
         <td>{{ pozo.field}}</td>
         <td>{{ pozo.well}}</td>
+        <td><i class="fa fa-pencil-square" aria-hidden="true"></i></td>
+        <td><i class="fa fa-eraser" aria-hidden="true"></i></td>
     </tr>
 </table>
