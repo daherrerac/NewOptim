@@ -11,9 +11,9 @@ h1{
 }
 .descripcion{
     background: #2c3758;
-    height: calc(100vh - 155px);
+    min-height: calc(100vh - 155px);
 }
 .carousel-item{
     background: #2c3758;
-    height: calc(100vh - 140px);
+    min-height: calc(100vh - 140px);
 }
