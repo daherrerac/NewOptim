@@ -1,0 +1,17 @@
+.jumbotron{
+    background-color: #2c3758;
+    margin-bottom: 0;
+    min-height: calc(100vh - 155px);
+    border-radius: 0;
+}
+.jumbotron h1, .jumbotron h6{
+    color: #ffffff;
+}
+form{
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+}
+label{
+    color: #ffffff;
+}
