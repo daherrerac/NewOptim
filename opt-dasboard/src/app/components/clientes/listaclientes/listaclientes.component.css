@@ -1,0 +1,13 @@
+.table td{
+    color:#ffffff;
+    padding: 10px 0;
+    text-align: center;
+    border: none;
+}
+.add{
+    border: 1px solid #ffffff;
+    background: none;
+    color:#ffffff;    
+    padding: 5px 10px;
+    font-weight: lighter;
+}

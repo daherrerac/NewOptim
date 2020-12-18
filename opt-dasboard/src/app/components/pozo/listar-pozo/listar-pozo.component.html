@@ -1,3 +1,4 @@
+<div class="jumbotron">
 <table class=" table table-sm">
     <thead>
         <tr>
@@ -8,7 +9,7 @@
             <td>Borrar</td>
         </tr>
     </thead>
-    <tr *ngFor="let pozo of pozoService.list">
+    <tr *ngFor="let pozo of pozoService.list | filter">
         <td>{{ pozo.company}}</td>
         <td>{{ pozo.field}}</td>
         <td>{{ pozo.well}}</td>

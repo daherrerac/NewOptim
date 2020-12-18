@@ -13,5 +13,4 @@ export class ListarPozoComponent implements OnInit {
   ngOnInit(): void {
     this.pozoService.obtenerPozo();
   }
-
 }

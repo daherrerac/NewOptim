@@ -11,6 +11,7 @@ import { UploadFilesComponent } from './components/upload-files/upload-files.com
 import { UploadblobComponent } from './components/uploadblob/uploadblob.component';
 import { PozoComponent } from './components/pozo/pozo.component';
 import { ClientesComponent } from './components/clientes/clientes.component';
+import { ListarPozoComponent } from './components/pozo/listar-pozo/listar-pozo.component';
 
 // { path: 'carga', component: UploadFilesComponent, canActivate: [AuthGuard]},
 
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'carga', component: UploadblobComponent},
   { path: 'callback', component: CallbackComponent},
   { path: '', component: HomeComponent},
+  { path: 'pozos', component: ListarPozoComponent},
   { path: '**', pathMatch: 'full', redirectTo: '/'}
 ];
 

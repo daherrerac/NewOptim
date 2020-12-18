@@ -3,4 +3,8 @@ export class Pozo{
     company: string;
     field: string;
     well: string;
+    bloque: string;
+    yacimiento: string;
+    ubicacion: string;
+    idUser: number;
 }

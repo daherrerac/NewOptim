@@ -25,6 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
 import { ClientesComponent } from './components/clientes/clientes.component';
+import { ListaclientesComponent } from './components/clientes/listaclientes/listaclientes.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 
 
@@ -45,7 +47,9 @@ import { ClientesComponent } from './components/clientes/clientes.component';
     PozoComponent,
     CrearPozoComponent,
     ListarPozoComponent,
-    ClientesComponent
+    ClientesComponent,
+    ListaclientesComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,

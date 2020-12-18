@@ -1,0 +1,15 @@
+<table class=" table table-sm">
+    <thead>
+        <tr>
+            <td>ID Usuario</td>
+            <td>Empresa</td>             
+            <td>Usuario</td>          
+        </tr>
+    </thead>
+    <tr *ngFor="let cliente of clienteService.list ">
+        <td>{{ cliente.idUser}}</td>
+        <td>{{ cliente.company}}</td>
+        <td>{{ cliente.userOptim}}</td>
+        <!-- <td><button class="add"><i class="fas fa-plus"></i> Añadir</button></td> -->
+    </tr>
+</table>
