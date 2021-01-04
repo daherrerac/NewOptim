@@ -8,8 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class PozoService {
 
-  // myAppUrl = 'https://addfieldback.azurewebsites.net';
-  myAppUrl = 'https://localhost:44399';
+  myAppUrl = 'https://addfieldback.azurewebsites.net';
+ // myAppUrl = 'https://localhost:44399';
   myApiUrl = '/api/WellTB/';
 
   list: Pozo[];

@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class NClienteService {
-  // myAppUrl = 'https://addfieldback.azurewebsites.net';
-  myAppUrl = 'https://localhost:44399';
+  myAppUrl = 'https://addfieldback.azurewebsites.net';
+  // myAppUrl = 'https://localhost:44399';
   myApiUrl = '/api/Usuarios/';
 
   list: ModeloCliente[];
